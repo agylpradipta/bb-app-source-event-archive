@@ -6,7 +6,7 @@ metadata:
     version: 7.1.0
     env: dev
   name: block-buster-deployment
-  namespace: 1-demo
+  namespace: legacy-demo
 spec:
   replicas: 1
   selector:
@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: app
-          image:  siddharth67/block-buster-dev:7.1.0
+          image:  agylpradipta/block-buster-dev:7.1.0
           imagePullPolicy: Always
           resources:
             requests:
