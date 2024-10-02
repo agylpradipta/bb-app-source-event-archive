@@ -7,12 +7,11 @@ metadata:
   namespace: dev-demo
 spec:
   ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
-    nodePort: 30008
+    - port: 80
+      protocol: TCP
+      targetPort: 80
   selector:
     app: block-buster
     version: 7.8.x
     env: dev
-  type: NodePort
+  type: ClusterIP
